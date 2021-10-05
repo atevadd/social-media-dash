@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
+  <meta name="author" content="Tofunmi Adeniyi"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -14,6 +15,7 @@
 </head>
 
 <body class="" data-theme="">
+  <!-- The main contents of the page -->
   <main class="main__content">
     <section class="main__content-header">
       <div class="main__content-header-stats">
@@ -203,7 +205,6 @@
 
 
     slider.addEventListener('click', e => {
-      // let localTheme = localStorage.setItem('theme', 'dark');
 
       if (theme === "") {
         document.querySelector('body').setAttribute("data-theme", "light");

@@ -57,6 +57,9 @@ body {
   @include desktop {
     width: 75%;
   }
+  @include tablet {
+    width: 90%;
+  }
 
   @include mobile {
     width: 90%;
@@ -67,6 +70,12 @@ body {
     position: relative;
 
     @include desktop {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+    @include tablet {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -185,6 +194,10 @@ body {
       display: grid;
       grid-template-columns: 1fr;
     }
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
 
     &-card {
       position: relative;
@@ -283,6 +296,10 @@ body {
         display: grid;
         grid-template-columns: 1fr;
       }
+      @include tablet {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
 
       .overview__card {
         background-color: var(--card-bg);

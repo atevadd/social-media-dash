@@ -99,6 +99,12 @@ body::before {
   }
 }
 
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .main__content {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 599px) {
   .main__content {
     width: 90%;
@@ -111,6 +117,21 @@ body::before {
 }
 
 @media screen and (min-width: 901px) {
+  .main__content-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
   .main__content-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -260,6 +281,15 @@ body::before {
   }
 }
 
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .main__content .social__media {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .main__content .social__media-card {
   position: relative;
   background-color: var(--card-bg);
@@ -378,6 +408,15 @@ body::before {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .main__content .overview__cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
