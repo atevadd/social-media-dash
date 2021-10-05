@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | social media dashboard with theme switch</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="" data-theme="">
+  <main class="main__content">
+    <section class="main__content-header">
+      <div class="main__content-header-stats">
+        <h2>Social Media Dashboard</h2>
+        <p>Total Followers: 23,004</p>
+      </div>
+      <div class="main__content-header-toggle">
+        <span class="page-mode">Dark Mode</span>
+        <label for="toggle" class="toggle">
+          <input type="checkbox" id="toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </section>
+
+    <section class="social__media">
+      <!-- a social media card -->
+      <div class="social__media-card facebook">
+        <div class="username">
+          <img src="/images/icon-facebook.svg" alt="facebook icon">
+          <span class="handle">@nathanf</span>
+        </div>
+        <div class="followers">
+          <h3>1987</h3>
+          <span>Followers</span>
+        </div>
+        <div class="daily__stats">
+          <span class="gain"><i class="bx bxs-caret-up"></i> 12 Today</span>
+        </div>
+      </div>
+      <!-- ends here -->
+      <div class="social__media-card twitter">
+        <div class="username">
+          <img src="/images/icon-twitter.svg" alt="twitter icon">
+          <span class="handle">@nathanf</span>
+        </div>
+        <div class="followers">
+          <h3>1044</h3>
+          <span>Followers</span>
+        </div>
+        <div class="daily__stats">
+          <span class="gain"><i class="bx bxs-caret-up"></i> 99 Today</span>
+        </div>
+      </div>
+      <div class="social__media-card instagram">
+        <div class="username">
+          <img src="/images/icon-instagram.svg" alt="instagram icon">
+          <span class="handle">@realnathanf</span>
+        </div>
+        <div class="followers">
+          <h3>11k</h3>
+          <span>Followers</span>
+        </div>
+        <div class="daily__stats">
+          <span class="gain"><i class="bx bxs-caret-up"></i>1099 Today</span>
+        </div>
+      </div>
+      <div class="social__media-card youtube">
+        <div class="username">
+          <img src="/images/icon-youtube.svg" alt="youtube icon">
+          <span class="handle">Nathan F.</span>
+        </div>
+        <div class="followers">
+          <h3>8239</h3>
+          <span>Followers</span>
+        </div>
+        <div class="daily__stats">
+          <span class="loss"><i class="bx bxs-caret-up"></i>144 Today</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="overview">
+      <h2>Overview - Today</h2>
+
+      <div class="overview__cards">
+        <!-- a card starts here -->
+        <div class="overview__card">
+          <div class="overview__card-up">
+            <span class="title">Page Views</span>
+            <img src="/images/icon-facebook.svg" alt="facebook icon">
+          </div>
+          <div class="overview__card-down">
+            <span class="stat-num">87</span>
+            <span class="gain"><i class="bx bxs-caret-up"></i> 3%</span>
+          </div>
+        </div>
+        <!-- ends here -->
+        <!-- a card starts here -->
+        <div class="overview__card">
+          <div class="overview__card-up">
+            <span class="title">Likes</span>
+            <img src="/images/icon-facebook.svg" alt="facebook icon">
+          </div>
+          <div class="overview__card-down">
+            <span class="stat-num">52</span>
+            <span class="loss"><i class="bx bxs-caret-up"></i>2%</span>
+          </div>
+        </div>
+        <!-- ends here -->
+        <!-- a card starts here -->
+        <div class="overview__card">
+          <div class="overview__card-up">
+            <span class="title">Likes</span>
+            <img src="/images/icon-instagram.svg" alt="instagram icon">
+          </div>
+          <div class="overview__card-down">
+            <span class="stat-num">5462</span>
+            <span class="gain"><i class="bx bxs-caret-up"></i>2257%</span>
+          </div>
+        </div>
+        <!-- ends here -->
+        <!-- a card starts here -->
+        <div class="overview__card">
+          <div class="overview__card-up">
+            <span class="title">Profile views</span>
+            <img src="/images/icon-instagram.svg" alt="instagram icon">
+          </div>
+          <div class="overview__card-down">
+            <span class="stat-num">52k</span>
+            <span class="gain"><i class="bx bxs-caret-up"></i>1375%</span>
+          </div>
+        </div>
+        <!-- ends here -->
+        <!-- a card starts here -->
+        <div class="overview__card">
+          <div class="overview__card-up">
+            <span class="title">Retweets</span>
+            <img src="/images/icon-twitter.svg" alt="twitter icon">
+          </div>
+          <div class="overview__card-down">
+            <span class="stat-num">117</span>
+            <span class="gain"><i class="bx bxs-caret-up"></i> 303%</span>
+          </div>
+        </div>
+        <!-- ends here -->
+        <!-- a card starts here -->
+        <div class="overview__card">
+          <div class="overview__card-up">
+            <span class="title">Likes</span>
+            <img src="/images/icon-twitter.svg" alt="twitter icon">
+          </div>
+          <div class="overview__card-down">
+            <span class="stat-num">507</span>
+            <span class="gain"><i class="bx bxs-caret-up"></i>553%</span>
+          </div>
+        </div>
+        <!-- ends here -->
+        <!-- a card starts here -->
+        <div class="overview__card">
+          <div class="overview__card-up">
+            <span class="title">Likes</span>
+            <img src="/images/icon-facebook.svg" alt="facebook icon">
+          </div>
+          <div class="overview__card-down">
+            <span class="stat-num">107</span>
+            <span class="loss"><i class="bx bxs-caret-up"></i> 19%</span>
+          </div>
+        </div>
+        <!-- ends here -->
+        <!-- a card starts here -->
+        <div class="overview__card">
+          <div class="overview__card-up">
+            <span class="title">Page Views</span>
+            <img src="/images/icon-facebook.svg" alt="facebook icon">
+          </div>
+          <div class="overview__card-down">
+            <span class="stat-num">1407</span>
+            <span class="gain"><i class="bx bxs-caret-up"></i> 12%</span>
+          </div>
+        </div>
+        <!-- ends here -->
+      </div>
+    </section>
+  </main>
+
+
+  <script>
+    // changing the website theme
+    const slider = document.querySelector(".slider");
+    const body = document.querySelector("body");
+    const pageMode = document.querySelector(".page-mode");
+
+    // storing the user preference in local storage
+    const theme = document.querySelector('body').getAttribute('data-theme');
+    let sliderState = localStorage.getItem('slider');
+
+
+    slider.addEventListener('click', e => {
+      // let localTheme = localStorage.setItem('theme', 'dark');
+
+      if (theme === "") {
+        document.querySelector('body').setAttribute("data-theme", "light");
+        body.classList.toggle('light-theme');
+        pageMode.innerText = "Light Mode";
+        let localTheme = localStorage.setItem('theme', 'light');
+
+        if (body.className.includes('light-theme')) {
+          let localTheme = localStorage.setItem('theme', 'light');
+          sliderState = localStorage.setItem('slider', 'on');
+          slider.classList.remove('off');
+          slider.classList.add('on');
+        } else {
+          let localTheme = localStorage.setItem('theme', 'dark');
+          sliderState = localStorage.setItem('slider', 'off');
+          pageMode.innerText = "Dark Mode";
+          slider.classList.remove('on');
+          slider.classList.add('off');
+        }
+      } else {
+        pageMode.innerText = "Dark Mode";
+        slider.classList.remove('on');
+        slider.classList.add('off');
+      }
+    });
+
+    // The load all the current value from local storage
+    document.addEventListener('DOMContentLoaded', function () {
+      let currentTheme = localStorage.getItem('theme');
+      let slideState = localStorage.getItem('slider');
+
+
+      if (currentTheme === "dark") {
+        body.className = "";
+        pageMode.innerText = "Dark Mode";
+        document.querySelector('body').setAttribute('data-theme', currentTheme);
+        slider.classList.toggle(slideState);
+      } else {
+        body.className = "light-theme";
+        pageMode.innerText = "Light Mode";
+        document.querySelector('body').setAttribute('data-theme', currentTheme);
+        slider.classList.toggle(slideState);
+      }
+    })
+  </script>
+</body>
+
+</html>
