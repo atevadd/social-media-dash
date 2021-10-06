@@ -243,12 +243,14 @@
         body.className = "";
         pageMode.innerText = "Dark Mode";
         document.querySelector('body').setAttribute('data-theme', currentTheme);
-        slider.classList.toggle(slideState);
+        slider.classList.remove(slideState);
+        slider.classList.add(slideState);
       } else {
         body.className = "light-theme";
         pageMode.innerText = "Light Mode";
         document.querySelector('body').setAttribute('data-theme', currentTheme);
-        slider.classList.toggle(slideState);
+        slider.classList.remove(slideState);
+        slider.classList.add(slideState);
       }
     })
   </script>
